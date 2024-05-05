@@ -9,6 +9,9 @@ import MainPresenter from "./MainPresenter";
     * Presenter: 불러온 데이터를 토대로 페이지에 출력, 함수 사용
 */
 const MainContainer = () => {
+    // 페이지 이동을 위한 외부 함수
+    const navigate = useNavigate();
+
     const [text, setText] = useState('');
     const [isSignUp, setIsSignUp] = useState(null);
     const [isSignIn, setIsSignIn] = useState(null);
@@ -76,6 +79,8 @@ const MainContainer = () => {
 
             SignIn={SignIn}
             isSignIn={isSignIn}
+
+            navigate={navigate}
         />
     )
 }

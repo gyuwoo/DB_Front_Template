@@ -6,6 +6,7 @@ import React from "react";
 */
 import { BackConnectTest } from "./components/BackConnectTest";
 import { DBConnectTest } from "./components/DBConnectTest";
+import { Navigate } from "./components/Navigate";
 
 /*
     css를 불러올 때는 아래와 같이 불러오면 된다.
@@ -33,6 +34,8 @@ const MainPresenter = ({
 
     SignIn,
     isSignIn,
+
+    navigate,
 }) => {
     /*
         Presenter에서는 단순히 받아온 데이터를 어떻게 보여줄 것인지만 표현한다.
@@ -86,15 +89,19 @@ const MainPresenter = ({
             {/* 아래는 children을 전달받아 띄워주는 형식이므로 여는 태그, 닫는 태그의 구분이 필요함 */}
             <DBConnectTest>
                 <div>
-                    <button onClick={SignUp}>회원가입</button>
+                    <button>회원가입(작동X)</button>
                     <div>회원가입: {isSignUp}</div>
                 </div>
 
                 <div>
-                    <button onClick={SignIn}>로그인</button>
+                    <button>로그인(작동X)</button>
                     <div>로그인: {isSignIn ? '로그인 성공' : '로그인 실패'}</div>
                 </div>
             </DBConnectTest>
+
+            <Navigate
+                navigate={navigate}
+            />
         </div>
     )
 }

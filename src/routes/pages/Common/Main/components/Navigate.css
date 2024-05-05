@@ -1,0 +1,17 @@
+.page-navigate {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    width: 100%;
+}
+
+.navigate-button {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navigate-button:hover {
+    color: blue;
+}
