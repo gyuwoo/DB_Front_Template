@@ -69,7 +69,7 @@ const SignInContainer = () => {
         });
 
         // 결과 받은 후 문제 없으면 메인 페이지로 이동
-        const data = result.json();
+        const data = await result.json();
 
         if (data.status === 4091) {
             // 4091은 문제가 없다는 것을 뜻하므로 메인 페이지로 이동

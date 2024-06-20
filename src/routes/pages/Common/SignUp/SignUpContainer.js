@@ -48,7 +48,7 @@ const SignUpContainer = () => {
         });
 
         // 결과 받은 후 문제 없으면 메인 페이지로 이동
-        const data = result.json();
+        const data = await result.json();
 
 
         if (data.status === 4091) {
