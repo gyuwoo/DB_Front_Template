@@ -1,6 +1,5 @@
 import React from "react";
 
-// SignInBox와 차이점 비교 바람 (state 사용법)
 export const SignUpBox = ({
     userInfo,
     setUserInfo,

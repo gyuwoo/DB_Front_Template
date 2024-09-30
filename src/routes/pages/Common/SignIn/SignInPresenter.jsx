@@ -19,7 +19,6 @@ const SignInPresenter = ({
                 메인 페이지로
             </div>
 
-            {/* SignUpPresenter와 차이점 비교 바람(state 간결화) */}
             <SignInBox
                 email={email}
                 setEmail={setEmail}
